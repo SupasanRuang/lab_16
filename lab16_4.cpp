@@ -17,3 +17,30 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int &k,int &l,int &m,int &n)
+{
+	
+	int i,temp,a[]={k,l,m,n};
+	
+	i=rand()%4;
+	temp=a[0];
+	a[0]=a[i];
+	a[i]=temp;
+
+	i=rand()%3+1;
+	temp=a[1];
+	a[1]=a[i];
+	a[i]=temp;
+
+	i=rand()%2+2;
+	temp=a[2];
+	a[2]=a[i];
+	a[i]=temp;
+
+	k=a[0];
+	l=a[1];
+	m=a[2];
+	n=a[3];
+
+
+}
